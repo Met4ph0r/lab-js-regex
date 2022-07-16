@@ -1,29 +1,68 @@
-   
-div {  
-    box-sizing: border-box; 
-    width: 100%; 
-    border: 100px solid black; 
-} 
-   
-form {                                         
-    margin: 0 auto; 
-    width: 600px;
-    text-align: center;
-    border: 1px Solid black;
-    background-color: aliceblue;
+body{
+    background: url("./simple-4781.jpg");
 }
 
-form>p{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+#parent{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: 'Trebuchet MS';
+    user-select: none;
 }
+   
+form {
+    display: grid;
+    /* grid-template-columns: 220px 300px 800px; */
+    grid-template-columns: 18% 23% 60%;
+    gap: 30px;
+    background-color: rgba(255, 255, 255, 0.619);   
+    padding: 30px;
+    margin-inline: 100px;
+    border-radius: 15px;
+    box-shadow: 8px 8px rgb(47, 144, 230);
+}
+
 input{
-    width: 300px;
-    margin-left: 2%;
-    float: inline-end;
+    width: 310px;
+    font-size: 20px;
+    padding: 5px;
 }
+
+
 .alert{
-    color: red;
+    color: rgb(255, 17, 0);
 }
+
+#result{
+    margin-left: 40px;
+    color: rgb(0, 212, 14);
+}
+
+#buttonDiv{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#button{
+    background-color: #FCFCFD;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    border-width: 0;
+    color: #36395A;
+    cursor: pointer;
+    transition: box-shadow .15s, transform .15s;
+}
+
+#button:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+#button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+#button:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
