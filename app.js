@@ -110,7 +110,7 @@ phoneValidate = () => {
         return false
     }
     else{
-        document.getElementById("sphone").innerText = "Phone must contain only 10 digits and be valid."
+        document.getElementById("sphone").innerText = "Phone must be valid and contain only 10 digits."
         return false
     }
 }
