@@ -7,36 +7,31 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<h2 style="text-align: center"> Regex VALIDATION</h2>
+<h2 style="text-align: center; color:white; font-size:40px; font-family: Verdana;">Regex Validation</h2>
+<div id="parent">
 <form name="RegForm" action="#" onsubmit="return formValidate()">
-    <p>Name : <input type="text" name="Name" id="name"></p>
-    <label class="alert" id="sname"></label>
-    <br>
+    <div>Name :</div> <input type="text" id="name"> <div class="alert" id="sname"></div>
 
-    <p> Address : <input type="text" name="Address" id="address">  </p>
-    <label class="alert" id="sadd" for="Address"></label>
-    <br>
+    <div>Address :</div> <input type="text" id="address"> <div class="alert" id="sadd" for="Address"></div>
 
-    <p>E-mail : <input type="text"  name="EMail" id="email"></p>
-    <label class="alert" id="smail"></label>
-    <br>
 
-    <p>Password : <input type="password" name="Password" id="pwd"> </p>
-    <label class="alert" id="spass"></label>
-    <br> <br> 
+    <div>E-mail :</div> <input type="text" id="email"> <div class="alert" id="smail"></div>
 
-    <p>Confirm Password : <input type="password" name="cPassword" id="cpwd"> </p>
-    <label class="alert" id = "sconpass"></label>
-    <br> <br>
 
-    <p>Phone : <input type="number" name="phone" id="phone"> </p>
-    <label class="alert" id="sphone"></label>
-    <br> <br>   
+    <div>Password :</div><input type="password" id="pwd"> <div class="alert" id="spass"></div>
 
-    <p><input type="submit" value="Check" name="Submit"></p><br>   
 
-    <p id="result"></p>
+    <div>Confirm Password :</div><input type="password" id="cpwd">  <div class="alert" id = "sconpass"></div>
 
-</form> 
+
+    <div>Phone :</div><input type="number" id="phone"> <div class="alert" id="sphone"></div>
+ 
+
+    <div id="buttonDiv"><input type="submit" value="Check" id="button"></div>
+
+    <div id="result"></div>
+
+</form>
+</div> 
 </body> 
 </html>
